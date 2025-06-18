@@ -12,4 +12,4 @@ This template was heavily inspired by [AwesomeCV](https://https://github.com/pos
 Full installation of TeX is assumed. On Ubuntu, install using `sudo apt install texlive-full`. Intented for `pdfLaTeX` compiler.
 
 ## Preview
-Example with dummy information can be viewed in the [PDF](https://github.com/matuscvengros/simple-cv/blob/main/public/cv.pdf).
+Example with dummy information can be viewed in the [PDF](https://raw.githubusercontent.com/matuscvengros/simple-cv/main/public/cv.pdf).
