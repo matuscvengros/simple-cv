@@ -13,4 +13,3 @@ Full installation of TeX is assumed. On Ubuntu, install using `sudo apt install 
 
 ## Preview
 Example with dummy information can be viewed in the [PDF](https://github.com/matuscvengros/simple-cv/blob/main/public/cv.pdf).
-![PDF](https://github.com/matuscvengros/simple-cv/blob/main/public/cv.pdf)
