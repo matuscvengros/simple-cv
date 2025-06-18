@@ -1,0 +1,8 @@
+# Ignore the private folder
+/private
+
+# Ignore all TeX generated output files
+*.aux
+*.out
+*.log
+*.gz

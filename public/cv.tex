@@ -1,0 +1,28 @@
+\documentclass[10pt, letterpaper, font=sourcesanspro]{simple-cv}
+
+% For public text - can be removed
+\usepackage{lipsum}
+
+% Personal Information
+\name{Name}{Surname}
+\position{Occupation}
+\address{Address}
+\mobile{(+61) 000 000 000}
+\email{name.surname@email.com}
+\github{matuscvengros}
+\linkedin{matuscvengros}
+% Quote
+\quote{\enquote{We absolutely must leave room for doubt or there is no progress and no learning.} -- \textnormal{R. P. Feynman}.}
+
+\begin{document}
+% Create header and footer
+\makecvheader
+\makecvfooter
+
+\input{./sections/highlights.tex}
+\input{./sections/experience.tex}
+\input{./sections/education.tex}
+\input{./sections/authorisations.tex}
+\input{./sections/skills.tex}
+\input{./sections/interests.tex}
+\end{document}
