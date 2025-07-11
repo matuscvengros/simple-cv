@@ -216,28 +216,29 @@
 
 % Highlight entry
 % Usage: \cvhighlightentry{<company>}{<role>}{<location>}{<date>}
-\newcommand{\cvhighlightentrytrim}[7]{%
-	\cvcommonentry{#3}{#4}{#5}{#6}%
+\newcommand{\cvhighlightentrytrim}[8]{%
+	\cvcommonentry{#4}{#5}{#6}{#7}%
 	\vspace*{0.5em}
 	\ifthenelse{\isempty{#1}}{%
 		\noindent
 		\begin{minipage}[t]{\entrywidth}%
-			#7
+			#8
 		\end{minipage}%
 	}{%
 		\noindent%
 		\begin{minipage}[c]{0.6\entrywidth}%
-			#7
+			#8
 		\end{minipage}%
 		\hfill%
 		\begin{minipage}[c]{\dimexpr 0.4\entrywidth - \columnsep\relax}%
 			\centering
-			\includegraphics[width=\linewidth, height=3cm, keepaspectratio, clip, trim=#2]{#1}
+			\includegraphics[width=\linewidth, height=#2, keepaspectratio, clip, trim=#3]{#1}
 		\end{minipage}%
 	}%
 }
-\DeclareDocumentCommand{\cvhighlightentry}{O{} O{0 0 0 0} m m m m m}{%
-	\cvhighlightentrytrim{#1}{#2}{#3}{#4}{#5}{#6}{#7}
+
+\DeclareDocumentCommand{\cvhighlightentry}{O{} O{3cm} O{0 0 0 0} m m m m m}{%
+	\cvhighlightentrytrim{#1}{#2}{#3}{#4}{#5}{#6}{#7}{#8}
 }
 
 % Simple entry intended for date and description text
