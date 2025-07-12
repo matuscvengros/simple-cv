@@ -214,8 +214,6 @@
 	\\%
 }
 
-% Highlight entry
-% Usage: \cvhighlightentry{<company>}{<role>}{<location>}{<date>}
 \newcommand{\cvhighlightentrytrim}[8]{%
 	\cvcommonentry{#4}{#5}{#6}{#7}%
 	\vspace*{0.5em}
@@ -238,6 +236,8 @@
 	\\%
 }
 
+% Highlight entry
+% Usage: \cvhighlightentry[<image>][<height>][<trim>]{<company>}{<role>}{<location>}{<date>}
 \DeclareDocumentCommand{\cvhighlightentry}{O{} O{3cm} O{0 0 0 0} m m m m m}{%
 	\cvhighlightentrytrim{#1}{#2}{#3}{#4}{#5}{#6}{#7}{#8}
 }
