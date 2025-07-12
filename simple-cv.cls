@@ -235,6 +235,7 @@
 			\includegraphics[width=\linewidth, height=#2, keepaspectratio, clip, trim=#3]{#1}
 		\end{minipage}%
 	}%
+	\\%
 }
 
 \DeclareDocumentCommand{\cvhighlightentry}{O{} O{3cm} O{0 0 0 0} m m m m m}{%
